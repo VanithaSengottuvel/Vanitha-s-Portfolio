@@ -1,54 +1,55 @@
 import { ExternalLink, Github } from 'lucide-react';
+import chatImg from "../assets/Chat.jpg";
+import powerImg from "../assets/sales.jpg";
+import figmaImg from "../assets/portfolio.jpg";
+import yoloImg from "../assets/Yolo.jpg";
+import AIImg from "../assets/Ai.jpg";
+
 
 export default function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      liveUrl: 'https://demo-project-1.com',
-      githubUrl: 'https://github.com/yourusername/project1'
+      title: 'AI Voice Recognition',
+      description: 'A modern AI-powered Voice Recognition Assistant built with React, TypeScript, and Vite, featuring speech recognition.',
+      image:AIImg,
+      tags: ['TypeScript', 'React.js', 'Vite', 'HTML5', 'CSS3', 'JavaScript (ES6+)'],
+      githubUrl: 'https://github.com/VanithaSengottuvel/Ai-Voice-Command'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates and team features.',
-      image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      liveUrl: 'https://demo-project-2.com',
-      githubUrl: 'https://github.com/yourusername/project2'
+      title: 'Real Time Chat App',
+      description: 'A Real-Time Chat Application enables users to send and receive messages instantly using technologies like MERN stack & Socket.IO.',
+      image: chatImg,
+      tags: ['React', 'Express', 'Tailwind CSS','Javascript','MongoDB'],
+      githubUrl: 'https://github.com/VanithaSengottuvel/Chat-App'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with 7-day forecast, maps, and location-based recommendations.',
+      title: 'Weather App',
+      description: 'Beautiful weather dashboard with forecast and location-based recommendations.',
       image: 'https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['JavaScript', 'API Integration', 'CSS3'],
-      liveUrl: 'https://demo-project-3.com',
-      githubUrl: 'https://github.com/yourusername/project3'
+      tags: ['JavaScript', 'API Integration', 'CSS3','HTML5'],
+      githubUrl: 'https://github.com/VanithaSengottuvel/Weather-App'
     },
     {
-      title: 'Social Media Clone',
-      description: 'Full-stack social media application with posts, comments, likes, and user profiles.',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Express', 'PostgreSQL'],
-      liveUrl: 'https://demo-project-4.com',
-      githubUrl: 'https://github.com/yourusername/project4'
+      title: 'YOLO Object Detection',
+      description: 'YOLO (You Only Look Once) Object Detection is a real-time computer vision model that detects and classifies multiple objects in images or videos with high speed and accuracy.',
+      image: yoloImg,
+      tags: ['Python', 'YOLOv8', 'OpenCV', 'Deep Learning'],
+      githubUrl: 'https://github.com/VanithaSengottuvel/Real-Time-Object-Detection-'
     },
     {
-      title: 'Portfolio Builder',
-      description: 'No-code portfolio builder with drag-and-drop interface and customizable templates.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'TypeScript', 'Tailwind'],
-      liveUrl: 'https://demo-project-5.com',
-      githubUrl: 'https://github.com/yourusername/project5'
+      title: 'Portfolio Using UI & UX',
+      description: 'No-code portfolio using Figma interface and customizable templates.',
+      image: figmaImg,
+      tags: ['Figma','Wireframe','Prototyping','UI','UX'],
+      githubUrl: 'https://github.com/VanithaSengottuvel/UI-UX-Portfolio-'
     },
     {
-      title: 'Fitness Tracker',
-      description: 'Mobile-responsive fitness tracking app with workout plans, progress charts, and goal setting.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Chart.js', 'Python'],
+      title: 'Sales Management Analysis',
+      description: 'A Adidas sales management analysis using PowerBI which developed to analyze sales performance, revenue, profit, and regional trends.',
+      image: powerImg,
+      tags: ['PowerBI','Excel','Quires','SQL'],
       liveUrl: 'https://demo-project-6.com',
-      githubUrl: 'https://github.com/yourusername/project6'
+      githubUrl: 'https://github.com/VanithaSengottuvel/Adidas-Sales-Analysis-Power-Bi-'
     }
   ];
 
@@ -99,15 +100,6 @@ export default function Projects() {
 
                 {/* Links */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all"
-                  >
-                    <ExternalLink size={18} />
-                    Live Demo
-                  </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"

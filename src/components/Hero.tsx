@@ -1,5 +1,5 @@
 import { ArrowDown } from 'lucide-react';
-
+import VanithaImg from "../assets/Vanitha.png";
 interface HeroProps {
   scrollY: number;
 }
@@ -18,8 +18,9 @@ export default function Hero({ scrollY }: HeroProps) {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-purple-500 overflow-hidden shadow-2xl shadow-purple-500/50 animate-pulse-slow">
               <img
-                src="/Vanitha S3.jpg"
-                alt="Profile"
+              src={VanithaImg}
+              alt="Vanitha"
+  
                 className="w-full h-full object-cover"
               />
             </div>
